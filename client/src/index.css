@@ -1,0 +1,8 @@
+body {
+  overflow: hidden;
+  background: url('images/background-image.jpg');
+  margin: 0;
+  background-repeat: no-repeat;
+  background-repeat: 50vh 50vh;
+  background-position: left top;
+}

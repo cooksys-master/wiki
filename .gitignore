@@ -1,0 +1,41 @@
+/node_modules
+
+/client/node_modules
+
+package-lock.json
+node_modules/.bin/create-react-app
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/client/.pnp
+/client/.pnp.js
+
+# testing
+/client/coverage
+
+# production
+/client/build
+
+# misc
+/client/.DS_Store
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
+/.metadata/
+
+/server/.metadata
+CredentialsDto/.project
+CredentialsDto/.settings/org.eclipse.jdt.core.prefs
+.vscode/launch.json
+server/src/main/resources/application.properties
+client.yarn.lock
+yarn.lock
+.idea/
+final_project.iml

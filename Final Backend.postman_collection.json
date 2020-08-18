@@ -1,0 +1,593 @@
+{
+	"info": {
+		"_postman_id": "57e6d046-e562-4a45-aff0-4c1f85180404",
+		"name": "Final Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add users",
+			"item": [
+				{
+					"name": "add frank",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"frank\",\n\t\t\"password\": \"123\"\n\t},\n\t\"profile\" : {\n\t\t\"firstName\" : \"Frank\",\n\t\t\"lastName\" : \"Fournier\",\n\t\t\"email\" : \"cooksystemswiki@gmail.com\",\n\t\t\"phoneNumber\" : \"123-456-7890\"\n\t}\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						},
+						"description": "create user frank"
+					},
+					"response": []
+				},
+				{
+					"name": "add will",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"will\",\n\t\t\"password\": \"123\"\n\t},\n\t\"profile\" : {\n\t\t\"firstName\" : \"Brad\",\n\t\t\"lastName\" : \"Marttala\",\n\t\t\"email\" : \"email@betteraddress.com\",\n\t\t\"phoneNumber\" : \"111-222-3333\"\n\t}\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add peter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"peter\",\n\t\t\"password\": \"123\"\n\t},\n\t\"profile\" : {\n\t\t\"firstName\" : \"Peter\",\n\t\t\"lastName\" : \"Zastoupil\",\n\t\t\"email\" : \"email@address.com\",\n\t\t\"phoneNumber\" : \"123-456-7890\"\n\t}\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add sean",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"sean\",\n\t\t\"password\": \"123\"\n\t},\n\t\"profile\" : {\n\t\t\"firstName\" : \"Sean\",\n\t\t\"lastName\" : \"NotSoGreat\",\n\t\t\"email\" : \"email@worstaddress.com\",\n\t\t\"phoneNumber\" : \"666-666-6666\"\n\t}\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add john",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"john\",\n\t\t\"password\": \"123\"\n\t},\n\t\"profile\" : {\n\t\t\"firstName\" : \"John\",\n\t\t\"lastName\" : \"Awesomesauce\",\n\t\t\"email\" : \"email@bestaddress.com\",\n\t\t\"phoneNumber\" : \"333-333-4444\"\n\t}\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Add Wiki Pages and Content",
+			"item": [
+				{
+					"name": "create home page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"frank\",\n\t\t\"password\": \"123\"\n\t},\n\t\"name\" : \"Home\",\n\t\"type\" : \"HOME\",\n\t\"parentName\" : null,\n\t\"parentId\" : null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create fedex",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"frank\",\n\t\t\"password\": \"123\"\n\t},\n\t\"name\" : \"FedEx\",\n\t\"type\" : \"COMPANY\",\n\t\"parentId\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create fedex team w&b",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"john\",\n\t\t\"password\": \"123\"\n\t},\n\t\"name\" : \"Weight and Balance\",\n\t\"type\" : \"TEAM\",\n\t\"parentId\" : 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create W&B project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"john\",\n\t\t\"password\": \"123\"\n\t},\n\t\"name\" : \"Project OverWait\",\n\t\"type\" : \"PROJECT\",\n\t\"parentId\" : 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create service master",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"will\",\n\t\t\"password\": \"123\"\n\t},\n\t\"name\" : \"Service Master\",\n\t\"type\" : \"COMPANY\",\n\t\"parentId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page"
+							]
+						},
+						"description": "create fedex"
+					},
+					"response": []
+				},
+				{
+					"name": "update fedex content",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"frank\",\n\t\t\"password\": \"123\"\n\t},\n\t\"content\" : \"CONTENT FEDEX ==========this is more stuff ====.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page/content/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page",
+								"content",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update home page",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"frank\",\n\t\t\"password\": \"123\"\n\t},\n\t\"content\" : \"Cook Systems History \\n=========\\nWe are a company founded prior to todays date\\n### Key Players\\nBrad \\n John \\n Sean\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page/content/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page",
+								"content",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Another fedex content update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"will\",\n\t\t\"password\": \"123\"\n\t},\n\t\"content\" : \"Another update to FedEx content\\n==========\\n### Getting a badge\\nit will take 6 months. Deal with it.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page/content/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page",
+								"content",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tests",
+			"item": [
+				{
+					"name": "rollback to archive id 1",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"frank\",\n\t\t\"password\": \"123\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page/archive/rollback/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page",
+								"archive",
+								"rollback",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get archive for pageId 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"credentials\" : {\n\t\t\"username\": \"frank\",\n\t\t\"password\": \"123\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/page/archive/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"page",
+								"archive",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
